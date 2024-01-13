@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
 
 export default function About() {
-  const { ref } = useSectionInView("About");
+  const { ref } = useSectionInView("Về tôi");
 
   return (
     <motion.section
@@ -17,32 +17,30 @@ export default function About() {
       transition={{ delay: 0.175 }}
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
+      <SectionHeading>Về Tôi</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Tôi là một nhà thiết kế sáng tạo với kinh nghiệm đa dạng trong lĩnh vực thiết kế 2D và 3D,
+        sử dụng các phần mềm chính <span className="font-medium">SketchUp, Lumion, Adobe Illustrator, Photoshop</span>.
+        Với kinh nghiệm thực tế trong việc thiết kế các sự kiện như hội nghị và tiệc cưới,
+        Tôi đã chứng minh khả năng tổ chức và quản lý sự kiện một cách chuyên nghiệp .
       </p>
-
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        Nổi bật với thành tích xuất sắc trong lĩnh vực thiết kế nghệ thuật,
+        Yến đã giành được <span className="font-medium">giải thưởng thiết kế nghệ thuật sắp đặt</span> hạng ba năm 2022
+        và tiếp tục vươn lên với thành tích xuất sắc hạng ba thiết kế công trình công cộng vào năm 2024.
+        Điều này là minh chứng cho sự đam mê và tâm huyết của tôi trong sự nghiệp.
+      </p>
+      <p>
+        Với GPA trung bình <span className="font-medium">3.7/4</span> và thành tích học tập ấn tượng,
+        tôi đã đạt được học bổng 100% suốt ba năm học đại học,
+        là minh chứng cho khả năng học thuật vững về và cam kết cao với sự nghiệp của mình.
+
+      </p>
+      <p>
+        Tôi có sở thích với các nhạc cụ âm nhạc và hiện tại đang nghiên cứu về ngành gốm ở Việt Nam
+      </p>
+      <p>
+        <span className="italic">(Có thể xem thêm chi tiết ở phần dự án)</span>
       </p>
     </motion.section>
   );

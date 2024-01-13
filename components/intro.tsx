@@ -4,9 +4,9 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight, BsFacebook, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaGithubSquare } from "react-icons/fa";
+import { FaGithubSquare, FaInstagram } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
@@ -31,13 +31,13 @@ export default function Intro() {
             }}
           >
             <Image
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
-              alt="Ricardo portrait"
+              src="/YenLNH.png"
+              alt="Lý Nguyễn Hoàng Yến"
               width="250"
               height="250"
               quality="95"
               priority={true}
-              className="h-36 w-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+              className="h-44 w-44 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
             />
           </motion.div>
 
@@ -62,11 +62,12 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Ricardo.</span> I'm a{" "}
-        <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">8 years</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        <span className="font-bold">Hello, Tôi là Lý Nguyễn Hoàng Yến</span> 
+        <br/>
+        Sinh viên từ trường {" "} <span className="font-bold">Đại học Kiến Trúc Tp.HCM</span> ngành{" "}
+        <span className="font-bold">Mỹ Thuật Đô Thị</span> khóa 2018. Tôi thích các việc làm 
+         <span className="italic"> sáng tạo và mỹ thuật</span>. Hiện tại tôi đang làm thiết kế - dựng đồ họa {" "}
+        <span className="underline">2D và 3D</span>. Cám ơn đã quan tâm
       </motion.h1>
 
       <motion.div
@@ -81,11 +82,11 @@ export default function Intro() {
           href="#contact"
           className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
           onClick={() => {
-            setActiveSection("Contact");
+            setActiveSection("Liên Hệ");
             setTimeOfLastClick(Date.now());
           }}
         >
-          Contact me here{" "}
+          Liên hệ với tôi{" "}
           <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
         </Link>
 
@@ -94,7 +95,7 @@ export default function Intro() {
           href="/CV.pdf"
           download
         >
-          Download CV{" "}
+          Tải CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
@@ -103,7 +104,7 @@ export default function Intro() {
           href="https://linkedin.com"
           target="_blank"
         >
-          <BsLinkedin />
+          <BsFacebook />
         </a>
 
         <a
@@ -111,7 +112,7 @@ export default function Intro() {
           href="https://github.com"
           target="_blank"
         >
-          <FaGithubSquare />
+          <FaInstagram />
         </a>
       </motion.div>
     </section>

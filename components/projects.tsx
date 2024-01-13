@@ -8,11 +8,11 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 
 export default function Projects() {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView("Dự Án", 0.5);
 
   return (
     <section ref={ref} id="projects" className="scroll-mt-28 mb-28">
-      <SectionHeading>My projects</SectionHeading>
+      <SectionHeading>Các Dự Án</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
           <Link href={`projects/${project.title}`} key={index}>

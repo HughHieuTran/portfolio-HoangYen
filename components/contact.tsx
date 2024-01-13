@@ -9,7 +9,7 @@ import SubmitBtn from "./submit-btn";
 import toast from "react-hot-toast";
 
 export default function Contact() {
-  const { ref } = useSectionInView("Contact");
+  const { ref } = useSectionInView("Liên Hệ");
 
   return (
     <motion.section
@@ -34,9 +34,9 @@ export default function Contact() {
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
         <a className="underline" href="mailto:example@gmail.com">
-          example@gmail.com
+          yenjun28@gmail.com
         </a>{" "}
-        or through this form.
+        hoặc qua form sau đây
       </p>
 
       <form
@@ -45,7 +45,7 @@ export default function Contact() {
           const { data, error } = await sendEmail(formData);
 
           if (error) {
-            toast.error(error);
+            toast.error("Đã xảy ra lỗi, vui lòng liên hệ qua email yenjun28@gmail.com");
             return;
           }
 
