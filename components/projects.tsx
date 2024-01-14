@@ -15,7 +15,7 @@ export default function Projects() {
       <SectionHeading>Các Dự Án</SectionHeading>
       <div>
         {projectsData.map((project, index) => (
-          <Link href={`projects/${project.title}`} key={index}>
+          <Link href={`projects/${project.path}`} key={index}>
             <Project {...project} />
           </Link>
         ))}

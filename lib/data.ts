@@ -63,7 +63,8 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "Dự án abc",
+    path: "du-an-abc",
+    title: "á bờ",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
     tags: ["Dự án", "Sketchup", "Đồ họa", "Giải thưởng", "abc"],
@@ -72,6 +73,7 @@ export const projectsData = [
 
   },
   {
+    path: "du-an-abc2",
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
@@ -80,6 +82,7 @@ export const projectsData = [
     html: ""
   },
   {
+    path: "du-an-abc3",
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",

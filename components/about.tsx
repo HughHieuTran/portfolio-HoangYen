@@ -4,6 +4,7 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
 
 export default function About() {
   const { ref } = useSectionInView("Về tôi");
@@ -39,9 +40,10 @@ export default function About() {
       <p>
         Tôi có sở thích với các nhạc cụ âm nhạc và hiện tại đang nghiên cứu về ngành gốm ở Việt Nam
       </p>
-      <p>
-        <span className="italic">(Có thể xem thêm chi tiết ở phần dự án)</span>
-      </p>
+      <br/>
+      <h1>
+        <Link href={`/projects`} className="italic font-bold text-xl text-blue-700">(Click xem thêm chi tiết ở phần dự án)</Link>
+      </h1>
     </motion.section>
   );
 }
