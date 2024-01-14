@@ -36,7 +36,7 @@ export const links = [
 export const experiencesData = [
   {
     title: "Tham gia học thuật ở Trường Đại Học Kiến Trúc Tp.HCM",
-    location: "Ho Chi Minh city",
+    location: "",
     description:
       "Bắt đầu sự nghiệp học thuật của bản thân ngành Mỹ Thuật Đô Thị Khóa 18",
     icon: React.createElement(LuGraduationCap),
@@ -49,7 +49,7 @@ export const experiencesData = [
     description:
       "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
     icon: React.createElement(FaStar),
-    date: "2021 - present",
+    date: "2021 - 2023",
   },
   {
     title: "Đoạt giải thưởng X",
@@ -63,10 +63,10 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Dự án abc",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: ["Dự án", "Sketchup", "Đồ họa", "Giải thưởng", "abc"],
     imageUrl: corpcommentImg,
     html: `<a href="abc.com">abc</a>`
 
@@ -75,7 +75,7 @@ export const projectsData = [
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      tags: ["Dự án", "Sketchup", "Đồ họa", "Giải thưởng", "abc"],
     imageUrl: rmtdevImg,
     html: ""
   },
@@ -83,7 +83,7 @@ export const projectsData = [
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      tags: ["Dự án", "Sketchup", "Đồ họa", "Giải thưởng", "abc"],
     imageUrl: wordanalyticsImg,
     html: ""
   },

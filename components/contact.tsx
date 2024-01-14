@@ -32,7 +32,7 @@ export default function Contact() {
       <SectionHeading>Contact me</SectionHeading>
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
+        Gửi email trực tiếp đến {" "}
         <a className="underline" href="mailto:example@gmail.com">
           yenjun28@gmail.com
         </a>{" "}
