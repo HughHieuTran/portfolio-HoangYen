@@ -112,7 +112,7 @@
     flex-direction: column;
     justify-content: flex-end;
     opacity: 1;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.1);
     height: 100%;
 }
 
@@ -131,10 +131,10 @@
 }
 
 .myswiper-slider p {
-    color: #dadada;
+    /* color: #dadada; */
     padding: 0 1.563rem;
     line-height: 1.6;
-    font-size: 0.75rem;
+    /* font-size: 0.75rem; */
 }
 
 .myswiper-slider a {
