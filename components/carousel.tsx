@@ -7,22 +7,22 @@ import { Pagination, EffectCoverflow, Autoplay } from 'swiper'
 import 'swiper/swiper-bundle.min.css'
 import 'swiper/swiper.min.css'
 
-import '../app/globals.css'
+import styles from './carousel.module.css'
 
 import { projectsData } from '@/lib/data'
 
 interface CarouselProps {
     path: string;
-}
+  }
 
-const Carousel: React.FC<CarouselProps> = ({ path }) => {
+const Carousel: React.FC<CarouselProps> = ({path}) => {
 
     const slider = projectsData.filter(p => p.path === path)[0].slider;
 
     return (
-        <div className='carousel'>
+        <div className={styles.carousel}>
             <Swiper
-                className='myswiper'
+                className={styles.myswiper}
                 modules={[Pagination, EffectCoverflow, Autoplay]}
                 effect={"coverflow"}
                 grabCursor={true}
@@ -59,7 +59,7 @@ const Carousel: React.FC<CarouselProps> = ({ path }) => {
             >
                 {
                     slider?.map(data => (
-                        <SwiperSlide key={data.title} style={{ backgroundImage: `url(${data.url})` }} className="myswiper-slider">
+                        <SwiperSlide key={data.title} style={{ backgroundImage: `url(${data.url})` }} className={styles['myswiper-slider']}>
                             <div>
                                 <h2>{data.title}</h2>
                                 <p className='text-white font-semibold text-md text-shadow-md'>{data.description}</p>

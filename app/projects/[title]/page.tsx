@@ -1,5 +1,4 @@
 
-import SectionHeading from "@/components/section-heading";
 import Carousel from "@/components/carousel";
 import { projectsData } from "@/lib/data";
 import Image from "next/image";
