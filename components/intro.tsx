@@ -66,8 +66,8 @@ export default function Intro() {
         <br/>
         Sinh viên từ trường {" "} <span className="font-bold">Đại học Kiến Trúc Tp.HCM</span> ngành{" "}
         <span className="font-bold">Mỹ Thuật Đô Thị</span> khóa 2018. Tôi thích các việc làm 
-         <span className="italic"> sáng tạo và mỹ thuật</span>. Hiện tại tôi đang làm thiết kế - dựng đồ họa {" "}
-        <span className="underline">2D và 3D</span>. Cám ơn đã quan tâm
+         <span className="italic"> sáng tạo và mỹ thuật</span>. Hiện tại tôi đang làm <span className="underline">thiết kế - đồ họa
+        2D và 3D</span>. Cám ơn đã quan tâm
       </motion.h1>
 
       <motion.div
